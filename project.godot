@@ -11,15 +11,15 @@ config_version=5
 [application]
 
 config/name="Heart Platformer"
-run/main_scene="res://start_menu.tscn"
+run/main_scene="res://scenes/start_menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 run/max_fps=60
 config/icon="res://icon.svg"
 
 [autoload]
 
-Events="*res://Events.gd"
-LevelTransition="*res://level_transition.tscn"
+Events="*res://Scripts/Events.gd"
+LevelTransition="*res://scenes/level_transition.tscn"
 
 [display]
 
@@ -31,7 +31,7 @@ window/stretch/mode="canvas_items"
 
 [gui]
 
-theme/custom="res://default_theme.tres"
+theme/custom="res://texturas/default_theme.tres"
 theme/custom_font="res://pixel_font.ttf"
 theme/default_font_subpixel_positioning=0
 
