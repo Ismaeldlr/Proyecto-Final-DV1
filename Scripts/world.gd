@@ -46,8 +46,15 @@ func show_level_completed():
 	level_completed.retry_button.grab_focus()
 	get_tree().paused = true
 
+func retrurn_main_menu():
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://scenes/start_menu.tscn")
+
 func _on_level_completed_retry():
 	retry()
 
 func _on_level_completed_next_level():
 	go_to_next_level()
+
+func _on_level_completed_main_menu():
+	retrurn_main_menu()
