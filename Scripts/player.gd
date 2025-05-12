@@ -34,6 +34,8 @@ func _physics_process(delta):
 	if just_left_wall:
 		wall_jump_timer.start()
 	update_animations(input_axis)
+	if global_position.y > 1000:
+		die_and_respawn()
 
 func apply_gravity(delta):
 	if not is_on_floor():
@@ -94,3 +96,7 @@ func update_animations(input_axis):
 
 func _on_hazard_detector_area_entered(area):
 	global_position = starting_position
+
+func die_and_respawn():
+	global_position = starting_position
+	velocity = Vector2.ZERO

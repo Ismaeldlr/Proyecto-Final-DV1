@@ -1,0 +1,126 @@
+[gd_scene load_steps=5 format=3 uid="uid://coxr5r0l80mfx"]
+
+[ext_resource type="PackedScene" uid="uid://dxev2igc1wpv5" path="res://scenes/world.tscn" id="1_xuajl"]
+[ext_resource type="PackedScene" uid="uid://bnpnwu5m3lcsh" path="res://scenes/levels/level_3.tscn" id="2_4gup8"]
+[ext_resource type="PackedScene" uid="uid://b7ssnkt4brfcg" path="res://Objects.tscn/heart.tscn" id="3_pr7ew"]
+[ext_resource type="PackedScene" uid="uid://6jsoqvcs8feb" path="res://Objects.tscn/spikes.tscn" id="4_pf6k0"]
+
+[node name="LevelTwo" instance=ExtResource("1_xuajl")]
+next_level = ExtResource("2_4gup8")
+
+[node name="Player" parent="." index="0"]
+position = Vector2(215, 27)
+
+[node name="Label" type="Label" parent="CanvasLayer" index="3"]
+offset_left = -45.0
+offset_top = 19.0
+offset_right = -5.0
+offset_bottom = 25.0
+text = "Easy "
+
+[node name="LevelTileMap" parent="." index="2"]
+layer_0/tile_data = PackedInt32Array(524290, 65536, 0, 524291, 65536, 0, 589826, 65536, 2, 589827, 65536, 2, 589829, 131072, 2, 524293, 131072, 1, 458757, 131072, 1, 393221, 131072, 1, 327685, 131072, 1, 589828, 65536, 2, 262149, 131072, 1, 196613, 131072, 1, 458756, 0, 1, 393220, 0, 1, 327684, 0, 1, 262148, 0, 1, 196610, 0, 2, 196611, 65536, 2, 131077, 131072, 0, 131074, 0, 0, 131075, 65536, 0, 131076, 65536, 0, 524292, 393216, 2, 196612, 393216, 1, 196606, 65536, 0, 262142, 327680, 1, 327678, 131072, 1, 393214, 131072, 1, 458750, 131072, 1, 524286, 131072, 1, 589822, 327680, 2, 655358, 65536, 2, 196607, 65536, 0, 262143, 65536, 2, 589823, 65536, 0, 655359, 65536, 2, 131072, 131072, 0, 196608, 131072, 2, 524288, 65536, 0, 589824, 65536, 2, 196605, 0, 0, 262141, 0, 1, 327677, 0, 1, 393213, 0, 1, 458749, 0, 1, 524285, 0, 1, 589821, 0, 1, 655357, 0, 2, 524289, 65536, 0, 589825, 65536, 2, 131065, 196608, 3, 65524, 196608, 3, 262129, 196608, 3, 131053, 196608, 3, 131050, 196608, 3, 131048, 196608, 3, -65562, 196608, 3, -131103, 65536, 3, -131102, 65536, 3, -131101, 131072, 3, -131104, 65536, 3, -131105, 65536, 3, -131106, 65536, 3, -131107, 65536, 3, -131108, 0, 3, -393254, 196608, 0, -327718, 196608, 1, -262182, 196608, 2, -655398, 196608, 0, -589862, 196608, 1, -524326, 196608, 2, -524323, 196608, 0, -458787, 196608, 1, -393251, 196608, 2, -655395, 0, 3, -655394, 65536, 3, -655393, 131072, 3, -851998, 196608, 0, -786462, 196608, 1, -720926, 196608, 2, -983073, 196608, 0, -917537, 196608, 1, -852001, 196608, 2, -1114142, 196608, 0, -1048606, 196608, 1, -983070, 196608, 2, -1114147, 0, 3, -1114146, 65536, 3, -1114145, 131072, 3, -1114152, 65536, 3, -1114153, 0, 3, -1114151, 131072, 3, -1376293, 196608, 3, -1376299, 196608, 3, -1310760, 196608, 0, -1245224, 196608, 2, 131084, 0, 3, 131085, 65536, 3, 131086, 131072, 3, -131055, 196608, 0, -65519, 196608, 1, 17, 196608, 2, -393199, 196608, 0, -327663, 196608, 1, -262127, 196608, 2, -262130, 196608, 0, -196594, 196608, 1, -131058, 196608, 2, -524274, 196608, 0, -458738, 196608, 1, -393202, 196608, 2, -786418, 196608, 0, -720882, 196608, 1, -655346, 196608, 2, -1048562, 196608, 0, -983026, 196608, 1, -917490, 196608, 2, -655343, 196608, 0, -589807, 196608, 1, -524271, 196608, 2, -917487, 196608, 0, -851951, 196608, 1, -786415, 196608, 2, -1179631, 196608, 0, -1114095, 196608, 1, -1048559, 196608, 2, -1310706, 196608, 0, -1245170, 196608, 1, -1179634, 196608, 2, -1310703, 196608, 3, -1441771, 196608, 3, -1638382, 196608, 3, -1703922, 196608, 3, -1834988, 196608, 3, -1900528, 196608, 3, -1966068, 196608, 3, -1966057, 196608, 3, -2097133, 196608, 3, -2359281, 196608, 3, -2228211, 196608, 3, -2228207, 196608, 3, -2359270, 196608, 3, -2162664, 196608, 3, -2359276, 196608, 3, -2424809, 196608, 3, -2555886, 196608, 3, -2555892, 196608, 3, -2359288, 196608, 3, -2097145, 196608, 3, -2293749, 196608, 3, -2490363, 196608, 3, -2228220, 196608, 3, -2228193, 196608, 3, -2031588, 196608, 3, -2293731, 196608, 3, -2424799, 196608, 3, -2555875, 196608, 3, -2621414, 196608, 3, -2686952, 196608, 3, -2752492, 196608, 3, -2752497, 196608, 3, -2621425, 196608, 3, -2752504, 196608, 3, -2621430, 196608, 3, -2818036, 196608, 3, -2686970, 196608, 3, -2949116, 196608, 3, -2949109, 196608, 3, -3014648, 196608, 3, -3080175, 196608, 3, -2949096, 196608, 3, -2883565, 196608, 3, -3080164, 196608, 3, -2818019, 196608, 3, -2752480, 196608, 3, -2621403, 196608, 3, -2752475, 196608, 3, -2883549, 196608, 3, -2949081, 196608, 3, -3014622, 196608, 3, -3014625, 196608, 3, -2424830, 196608, 3, -2621437, 196608, 3, -2686976, 196608, 3, -2883582, 196608, 3, -2818049, 196608, 3, -3080192, 196608, 3, -3211261, 196608, 3, -3211257, 196608, 3, -3080195, 196608, 3, -3276800, 196608, 3, -3538936, 196608, 3, -3473404, 196608, 3, -3342327, 196608, 3, -3473407, 196608, 3, -3211251, 196608, 3, -3145718, 196608, 3, -3342320, 196608, 3, -3211243, 196608, 3, -3080171, 196608, 3, -3276773, 196608, 3, -3407850, 196608, 3, -3276776, 196608, 3, -3407840, 196608, 3, -3211233, 196608, 3, -3211229, 196608, 3, -3145691, 196608, 3, -3473379, 196608, 3, -3669991, 196608, 3, -3604459, 196608, 3, -3538928, 196608, 3, -3473395, 196608, 3, -3735540, 196608, 3, -3735544, 196608, 3, -3735548, 196608, 3, -3997683, 196608, 3, -4128751, 196608, 3, -3801071, 196608, 3, -3932137, 196608, 3, -3866605, 196608, 3, -3801064, 196608, 3, -3538910, 196608, 3, -3735522, 196608, 3, -3866595, 196608, 3, -4128742, 196608, 3, -4128747, 196608, 3, -4259817, 196608, 3, -4259825, 196608, 3, -4194292, 196608, 3, -4128761, 196608, 3, -3997687, 196608, 3, -3997691, 196608, 3, -4390902, 196608, 3, -4456433, 196608, 3, -4456429, 196608, 3, -4718577, 196608, 2, -4849649, 196608, 0, -4784113, 196608, 1)
+
+[node name="Heart" parent="." index="3" instance=ExtResource("3_pr7ew")]
+position = Vector2(23, 19)
+
+[node name="Label" type="Label" parent="." index="5"]
+offset_left = 77.0
+offset_top = 18.0
+offset_right = 117.0
+offset_bottom = 24.0
+text = "Hard"
+
+[node name="Heart2" parent="." index="6" instance=ExtResource("3_pr7ew")]
+position = Vector2(-184, -12)
+
+[node name="Heart3" parent="." index="7" instance=ExtResource("3_pr7ew")]
+position = Vector2(-359, -35)
+
+[node name="Heart4" parent="." index="8" instance=ExtResource("3_pr7ew")]
+position = Vector2(-575, -81)
+
+[node name="Heart5" parent="." index="9" instance=ExtResource("3_pr7ew")]
+position = Vector2(-537, -193)
+
+[node name="Heart6" parent="." index="10" instance=ExtResource("3_pr7ew")]
+position = Vector2(-536, -306)
+
+[node name="Heart7" parent="." index="11" instance=ExtResource("3_pr7ew")]
+position = Vector2(-631, -386)
+
+[node name="Spikes" parent="." index="12" instance=ExtResource("4_pf6k0")]
+position = Vector2(336, -336)
+rotation = -1.5708
+
+[node name="Spikes2" parent="." index="13" instance=ExtResource("4_pf6k0")]
+position = Vector2(352, -351)
+rotation = 1.5708
+
+[node name="Spikes3" parent="." index="14" instance=ExtResource("4_pf6k0")]
+position = Vector2(272, -304)
+rotation = -1.5708
+
+[node name="Spikes4" parent="." index="15" instance=ExtResource("4_pf6k0")]
+position = Vector2(288, -319)
+rotation = 1.5708
+
+[node name="Heart8" parent="." index="16" instance=ExtResource("3_pr7ew")]
+position = Vector2(256, -18)
+
+[node name="Heart9" parent="." index="17" instance=ExtResource("3_pr7ew")]
+position = Vector2(257, -86)
+
+[node name="Heart10" parent="." index="18" instance=ExtResource("3_pr7ew")]
+position = Vector2(256, -165)
+
+[node name="Heart11" parent="." index="19" instance=ExtResource("3_pr7ew")]
+position = Vector2(255, -264)
+
+[node name="Heart12" parent="." index="20" instance=ExtResource("3_pr7ew")]
+position = Vector2(344, -365)
+
+[node name="Heart13" parent="." index="21" instance=ExtResource("3_pr7ew")]
+position = Vector2(265, -480)
+
+[node name="Heart14" parent="." index="22" instance=ExtResource("3_pr7ew")]
+position = Vector2(393, -544)
+
+[node name="Heart15" parent="." index="23" instance=ExtResource("3_pr7ew")]
+position = Vector2(182, -574)
+
+[node name="Heart16" parent="." index="24" instance=ExtResource("3_pr7ew")]
+position = Vector2(248, -648)
+
+[node name="Heart17" parent="." index="25" instance=ExtResource("3_pr7ew")]
+position = Vector2(59, -655)
+
+[node name="Heart18" parent="." index="26" instance=ExtResource("3_pr7ew")]
+position = Vector2(392, -732)
+
+[node name="Heart19" parent="." index="27" instance=ExtResource("3_pr7ew")]
+position = Vector2(212, -795)
+
+[node name="Heart20" parent="." index="28" instance=ExtResource("3_pr7ew")]
+position = Vector2(55, -798)
+
+[node name="Heart21" parent="." index="29" instance=ExtResource("3_pr7ew")]
+position = Vector2(470, -860)
+
+[node name="Heart22" parent="." index="30" instance=ExtResource("3_pr7ew")]
+position = Vector2(137, -924)
+
+[node name="Heart23" parent="." index="31" instance=ExtResource("3_pr7ew")]
+position = Vector2(278, -941)
+
+[node name="Heart24" parent="." index="32" instance=ExtResource("3_pr7ew")]
+position = Vector2(249, -1053)
+
+[node name="Heart25" parent="." index="33" instance=ExtResource("3_pr7ew")]
+position = Vector2(471, -955)
+
+[node name="Heart26" parent="." index="34" instance=ExtResource("3_pr7ew")]
+position = Vector2(248, -1197)
+
+[node name="Heart27" parent="." index="35" instance=ExtResource("3_pr7ew")]
+position = Vector2(631, -731)

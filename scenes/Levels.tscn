@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bsbuncoo1goih"]
 
-[ext_resource type="Script" path="res://scenes/levels.gd" id="1_cg34y"]
+[ext_resource type="Script" path="res://Scripts/levels.gd" id="1_cg34y"]
 
 [node name="StartMenu" type="CenterContainer"]
 anchors_preset = 15
