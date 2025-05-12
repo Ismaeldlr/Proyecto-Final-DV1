@@ -10,25 +10,50 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_cg34y")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
 
-[node name="1" type="Button" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="1" type="Button" parent="HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(64, 16)
 layout_mode = 2
 text = "1"
 
-[node name="2" type="Button" parent="VBoxContainer"]
+[node name="2" type="Button" parent="HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(64, 16)
 layout_mode = 2
 text = "2
 "
 
-[node name="3" type="Button" parent="VBoxContainer"]
+[node name="3" type="Button" parent="HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(64, 16)
 layout_mode = 2
 text = "3"
 
-[connection signal="pressed" from="VBoxContainer/1" to="." method="_on_1_pressed"]
-[connection signal="pressed" from="VBoxContainer/2" to="." method="_on_2_pressed"]
-[connection signal="pressed" from="VBoxContainer/3" to="." method="_on_3_pressed"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="4" type="Button" parent="HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(64, 16)
+layout_mode = 2
+text = "4"
+
+[node name="5" type="Button" parent="HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(64, 16)
+layout_mode = 2
+text = "5
+"
+
+[node name="6" type="Button" parent="HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(64, 16)
+layout_mode = 2
+text = "6"
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/4" to="." method="_on_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/5" to="." method="_on_5_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/6" to="." method="_on_6_pressed"]

@@ -18,3 +18,21 @@ func _on_3_pressed() -> void:
 	await LevelTransition.fade_to_black()
 	get_tree().change_scene_to_file("res://scenes/levels/level_3.tscn")
 	LevelTransition.fade_from_black()
+
+
+func _on_4_pressed() -> void:
+	await LevelTransition.fade_to_black()
+	get_tree().change_scene_to_file("res://scenes/levels/level_4.tscn")
+	LevelTransition.fade_from_black()
+
+
+func _on_5_pressed() -> void:
+	await LevelTransition.fade_to_black()
+	get_tree().change_scene_to_file("res://scenes/levels/level_5.tscn")
+	LevelTransition.fade_from_black()
+
+
+func _on_6_pressed() -> void:
+	await LevelTransition.fade_to_black()
+	get_tree().change_scene_to_file("res://scenes/levels/level_6.tscn")
+	LevelTransition.fade_from_black()
