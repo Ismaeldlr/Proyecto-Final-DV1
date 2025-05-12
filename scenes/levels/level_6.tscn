@@ -9,7 +9,7 @@
 next_level = ExtResource("2_4gup8")
 
 [node name="Player" parent="." index="0"]
-position = Vector2(215, 27)
+position = Vector2(23, 123)
 
 [node name="Label" type="Label" parent="CanvasLayer" index="3"]
 offset_left = -45.0
