@@ -1,12 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://coxr5r0l80mfx"]
+[gd_scene load_steps=4 format=3 uid="uid://coxr5r0l80mfx"]
 
 [ext_resource type="PackedScene" uid="uid://dxev2igc1wpv5" path="res://scenes/world.tscn" id="1_xuajl"]
-[ext_resource type="PackedScene" uid="uid://bnpnwu5m3lcsh" path="res://scenes/levels/level_3.tscn" id="2_4gup8"]
 [ext_resource type="PackedScene" uid="uid://b7ssnkt4brfcg" path="res://Objects.tscn/heart.tscn" id="3_pr7ew"]
 [ext_resource type="PackedScene" uid="uid://6jsoqvcs8feb" path="res://Objects.tscn/spikes.tscn" id="4_pf6k0"]
 
 [node name="LevelTwo" instance=ExtResource("1_xuajl")]
-next_level = ExtResource("2_4gup8")
 
 [node name="Player" parent="." index="0"]
 position = Vector2(23, 123)
@@ -124,3 +122,33 @@ position = Vector2(248, -1197)
 
 [node name="Heart27" parent="." index="35" instance=ExtResource("3_pr7ew")]
 position = Vector2(631, -731)
+
+[node name="Spikes5" parent="." index="36" instance=ExtResource("4_pf6k0")]
+position = Vector2(272, -32)
+
+[node name="Spikes6" parent="." index="37" instance=ExtResource("4_pf6k0")]
+position = Vector2(272, -32)
+
+[node name="Spikes7" parent="." index="38" instance=ExtResource("4_pf6k0")]
+position = Vector2(224, -64)
+
+[node name="Spikes8" parent="." index="39" instance=ExtResource("4_pf6k0")]
+position = Vector2(273, -96)
+
+[node name="Spikes9" parent="." index="40" instance=ExtResource("4_pf6k0")]
+position = Vector2(224, -128)
+
+[node name="Spikes10" parent="." index="41" instance=ExtResource("4_pf6k0")]
+position = Vector2(273, -160)
+
+[node name="Spikes11" parent="." index="42" instance=ExtResource("4_pf6k0")]
+position = Vector2(224, -192)
+
+[node name="Spikes12" parent="." index="43" instance=ExtResource("4_pf6k0")]
+position = Vector2(273, -224)
+
+[node name="Spikes13" parent="." index="44" instance=ExtResource("4_pf6k0")]
+position = Vector2(224, -256)
+
+[node name="Spikes14" parent="." index="45" instance=ExtResource("4_pf6k0")]
+position = Vector2(273, -288)
